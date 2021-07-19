@@ -1,71 +1,22 @@
 <!DOCTYPE HTML>
-<!--
-	Identity by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-        <link rel="icon" href="images/icon.png" type="image/x-icon"/>
-<link rel="shortcut icon" href="images/profile.png" type="image/x-icon"/>
-		<title>Jim.K</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-loading">
-
-		<!-- Wrapper -->
-			<div id="wrapper">
-
-				<!-- Main -->
-					<section id="main">
-						<header>
-                            <img src="images/profile.png" alt="Avatar">
-							<h1>Small Room Sound</h1>
-
-                            
-						</header>
-						
-						<footer>
-
-                            
-                            <ul class="icons">
-								<li><a href="https://www.instagram.com/_smallroomsound/" class="fa-instagram">Instagram</a></li>
-                            
-                                <li><a href="https://audius.co/smallroomsound" class="fa-volume-up">Soundcloud</a></li>
-
-								<li><a href="https://www.youtube.com/channel/UCkk9Jd4fvQ59QGsFmLke-7A" class="fa-youtube">youtube</a></li>
-                                
-                           
-                            </ul>
-                            
-                            
-						</footer>
-					</section>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="copyright">
-
-							<li>info.smallroomsound@gmail.com</li>
-						</ul>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<!--[if lte IE 8]><script src="assets/js/respond.min.js"></script><![endif]-->
-			<script>
-				if ('addEventListener' in window) {
-					window.addEventListener('load', function() { document.body.className = document.body.className.replace(/\bis-loading\b/, ''); });
-					document.body.className += (navigator.userAgent.match(/(MSIE|rv:11\.0)/) ? ' is-ie' : '');
-				}
-			</script>
-
-	</body>
+  <head>
+    <script src="http://www.webglearth.com/v2/api.js"></script>
+    <script>
+      function initialize() {
+        var earth = new WE.map('earth_div');
+        WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
+          attribution: '© OpenStreetMap contributors'
+        }).addTo(earth);
+      }
+    </script>
+    <style>
+      html, body{padding: 0; margin: 0;}
+      #earth_div{top: 0; right: 0; bottom: 0; left: 0; position: absolute !important;}
+    </style>
+    <title>WebGL Earth API: Hello World</title>
+  </head>
+  <body onload="initialize()">
+    <div id="earth_div"></div>
+  </body>
 </html>
