@@ -1,22 +1,27 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+
 <html>
-  <head>
-    <script src="http://www.webglearth.com/v2/api.js"></script>
-    <script>
-      function initialize() {
-        var earth = new WE.map('earth_div');
-        WE.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{
-          attribution: '© OpenStreetMap contributors'
-        }).addTo(earth);
-      }
-    </script>
-    <style>
-      html, body{padding: 0; margin: 0;}
-      #earth_div{top: 0; right: 0; bottom: 0; left: 0; position: absolute !important;}
-    </style>
-    <title>WebGL Earth API: Hello World</title>
-  </head>
-  <body onload="initialize()">
-    <div id="earth_div"></div>
-  </body>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>S.R.S</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="title-01.png" type="image/x-icon"/>
+</head>
+
+<body>
+    <img href="https://www.instagram.com/_smallroomsound" target="_blank"  id="userPhoto" src="square-01.png" alt="User Photo">
+    
+    <a href="https://www.instagram.com/_smallroomsound" target="_blank" id="userName">@_smallroomsound</a>
+    <div id="links">
+        <a class="link" href="https://www.youtube.com/channel/UCkk9Jd4fvQ59QGsFmLke-7A" target="_blank">YouTube</a>
+        <a class="link" href="https://soundcloud.com/smallroomsound" target="_blank">SoundCloud</a>
+        <a class="link" href="https://audius.co/smallroomsound" target="_blank">Audius</a>
+        <a class="link" href="https://instagram.com/_smallroomsound/" target="_blank">Instagram</a>
+    </div>
+
+    <!-- Javascript -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <script  src="index.js"></script>
+</body>
 </html>
