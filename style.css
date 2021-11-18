@@ -11,6 +11,10 @@ body{
     background-color: var(--bgColor);
 }
 
+#main{ 
+    text-align: center;
+}
+
 #userPhoto{
     width: 220px;
     height: 220px;
@@ -55,4 +59,10 @@ body{
 .link:hover{
     background-color: var(--bgColor);
     color: var(--accentColor);
+}
+
+p{
+    font-family: var(--font);
+    color: white;
+    font-size: 10px;
 }
