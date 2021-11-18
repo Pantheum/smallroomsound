@@ -12,7 +12,16 @@ body{
 }
 
 #main{ 
+    
+}
+
+#tag{
     text-align: center;
+   width: 100%;
+    font-family: var(--font);
+    color: white;
+    font-size: 16px;
+    
 }
 
 #userPhoto{
@@ -41,6 +50,8 @@ body{
     display: block;
     margin: 27px auto;
 }
+
+
 .link{
     display: block;
     background-color: var(--accentColor);
@@ -59,10 +70,4 @@ body{
 .link:hover{
     background-color: var(--bgColor);
     color: var(--accentColor);
-}
-
-p{
-    font-family: var(--font);
-    color: white;
-    font-size: 10px;
 }
